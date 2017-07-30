@@ -17,10 +17,14 @@ btn.addEventListener("click", function(){
     myRequest.send();
 });
 
-//RENDERIAR O HTML NA PÁGINA
-
+//RENDERIZAR O HTML NA PÁGINA
 function renderHTML(data){
     var htmlString = ""
+
+    for (i=0; i < data.length; i++){
+        htmlString += "<p>" + data[i] + "</p>";
+    }
+
     animalContainer.insertAdjacentHTML('beforeend', htmlString);
 }
 
