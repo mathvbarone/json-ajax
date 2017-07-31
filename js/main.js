@@ -37,6 +37,7 @@ function renderHTML(data){
           }
         }
 
+        
         htmlString += ' and dislikes ';
         for(ii = 0; ii < data[i].foods.likes.length; ii++){
           if(ii == 0){
